@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -32,17 +33,25 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col">
           <header className="border-b border-slate-800 bg-slate-950/80 backdrop-blur">
             <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 lg:px-6">
-              <div className="flex flex-col gap-1">
-                <Link
-                  href="/"
-                  className="text-lg font-semibold tracking-tight text-orange-400 hover:text-orange-300"
-                >
-                  Gipson Steel, Inc.
-                </Link>
-                <p className="text-xs font-medium text-slate-300">
-                  AISC Certified · Structural Steel Fabrication
-                </p>
-              </div>
+              <Link href="/" className="flex items-center gap-3">
+                <div className="relative h-10 w-16 sm:h-12 sm:w-20">
+                  <Image
+                    src="/gipson-steel-logo.png"
+                    alt="Gipson Steel logo"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+                <div className="flex flex-col gap-0.5">
+                  <span className="text-sm font-semibold tracking-tight text-orange-400">
+                    Gipson Steel, Inc.
+                  </span>
+                  <span className="text-[10px] font-medium uppercase text-slate-300">
+                    AISC Certified · Structural Steel Fabrication
+                  </span>
+                </div>
+              </Link>
               <div className="flex flex-col items-end gap-1 text-right text-xs sm:text-sm">
                 <a
                   href="tel:6014825131"
