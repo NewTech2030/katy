@@ -33,7 +33,7 @@ export default function ContactPage() {
       <section className="border-b border-slate-800 bg-slate-950">
         <div className="mx-auto max-w-6xl px-4 py-12 lg:px-6 lg:py-16">
           <div className="space-y-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-400">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-orange-400">
               Contact
             </p>
             <h1 className="text-balance text-2xl font-semibold tracking-tight sm:text-3xl lg:text-4xl">
@@ -52,13 +52,13 @@ export default function ContactPage() {
               <div className="mt-3 space-y-2 text-sm text-slate-300">
                 <p>
                   <span className="font-medium text-slate-100">Main:&nbsp;</span>
-                  <a href="tel:6014825131" className="text-sky-400 hover:text-sky-300">
+                  <a href="tel:6014825131" className="text-orange-400 hover:text-orange-300">
                     601.482.5131
                   </a>
                 </p>
                 <p>
                   <span className="font-medium text-slate-100">Fax:&nbsp;</span>
-                  <a href="tel:6014855119" className="text-sky-400 hover:text-sky-300">
+                  <a href="tel:6014855119" className="text-orange-400 hover:text-orange-300">
                     601.485.5119
                   </a>
                 </p>
@@ -80,7 +80,7 @@ export default function ContactPage() {
                     <p className="text-xs text-slate-400">{person.title}</p>
                     <a
                       href={`mailto:${person.email}`}
-                      className="text-xs text-sky-400 hover:text-sky-300"
+                      className="text-xs text-orange-400 hover:text-orange-300"
                     >
                       {person.email}
                     </a>

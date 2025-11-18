@@ -10,7 +10,7 @@ export default function AboutPage() {
       <section className="border-b border-slate-800 bg-slate-950">
         <div className="mx-auto max-w-6xl px-4 py-12 lg:px-6 lg:py-16">
           <div className="space-y-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-400">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-orange-400">
               About Gipson Steel
             </p>
             <h1 className="text-balance text-2xl font-semibold tracking-tight sm:text-3xl lg:text-4xl">

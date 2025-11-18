@@ -35,7 +35,7 @@ export default function RootLayout({
               <div className="flex flex-col gap-1">
                 <Link
                   href="/"
-                  className="text-lg font-semibold tracking-tight text-sky-400 hover:text-sky-300"
+                  className="text-lg font-semibold tracking-tight text-orange-400 hover:text-orange-300"
                 >
                   Gipson Steel, Inc.
                 </Link>
@@ -46,7 +46,7 @@ export default function RootLayout({
               <div className="flex flex-col items-end gap-1 text-right text-xs sm:text-sm">
                 <a
                   href="tel:6014825131"
-                  className="font-medium text-sky-400 hover:text-sky-300"
+                  className="font-medium text-orange-400 hover:text-orange-300"
                 >
                   601.482.5131
                 </a>
@@ -89,7 +89,7 @@ export default function RootLayout({
                 </Link>
                 <Link
                   href="/contact"
-                  className="ml-auto rounded-full bg-sky-500 px-4 py-1.5 text-xs font-semibold text-slate-950 shadow-sm transition hover:bg-sky-400"
+                  className="ml-auto rounded-full bg-orange-500 px-4 py-1.5 text-xs font-semibold text-slate-950 shadow-sm transition hover:bg-orange-400"
                 >
                   Contact
                 </Link>

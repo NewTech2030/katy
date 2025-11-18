@@ -113,7 +113,7 @@ export default function ClientsPage() {
       <section className="border-b border-slate-800 bg-slate-950">
         <div className="mx-auto max-w-6xl px-4 py-12 lg:px-6 lg:py-16">
           <div className="space-y-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-400">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-orange-400">
               Partial Client List
             </p>
             <h1 className="text-balance text-2xl font-semibold tracking-tight sm:text-3xl lg:text-4xl">
@@ -131,7 +131,7 @@ export default function ClientsPage() {
             {clients.map((client) => (
               <div
                 key={client.name}
-                className="flex flex-col justify-between rounded-2xl border border-slate-800 bg-slate-900/60 p-4"
+                className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between rounded-2xl border border-slate-800 bg-slate-900/60 p-4"
               >
                 <div>
                   <div className="text-sm font-medium text-slate-50">

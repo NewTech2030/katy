@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const pillars = [
@@ -21,13 +22,18 @@ const stats = [
   { label: "Sq. ft. under roof", value: "100,000" },
 ];
 
+const heroImage = {
+  src: "https://www.gipsonsteel.com/sites/GipsonSteel/cache/file/8A9275DD-CC31-4087-AE5AE1F6B9A19134.jpg",
+  alt: "Dudy Noble Baseball Stadium structural steel project by Gipson Steel",
+};
+
 export default function Home() {
   return (
     <div className="text-slate-50">
       <section className="border-b border-slate-800 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
         <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 py-12 lg:flex-row lg:items-center lg:py-20 lg:px-6">
           <div className="flex-1 space-y-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-400">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-orange-400">
               Structural Steel Fabrication · AISC Certified
             </p>
             <h1 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
@@ -42,7 +48,7 @@ export default function Home() {
             <div className="flex flex-wrap items-center gap-4">
               <Link
                 href="/projects"
-                className="inline-flex items-center justify-center rounded-full bg-sky-500 px-6 py-2 text-sm font-semibold text-slate-950 shadow-lg shadow-sky-500/25 transition hover:bg-sky-400"
+                className="inline-flex items-center justify-center rounded-full bg-orange-500 px-6 py-2 text-sm font-semibold text-slate-950 shadow-lg shadow-orange-500/25 transition hover:bg-orange-400"
               >
                 View Projects
               </Link>
@@ -59,7 +65,7 @@ export default function Home() {
                   key={stat.label}
                   className="rounded-2xl border border-slate-800 bg-slate-900/60 px-4 py-3"
                 >
-                  <div className="text-lg font-semibold text-sky-400">
+                  <div className="text-lg font-semibold text-orange-400">
                     {stat.value}
                   </div>
                   <div className="text-xs text-slate-400">{stat.label}</div>
@@ -70,8 +76,18 @@ export default function Home() {
 
           <div className="flex-1">
             <div className="relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/70 p-6 shadow-2xl">
-              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.18),transparent_55%),radial-gradient(circle_at_bottom,_rgba(59,130,246,0.18),transparent_55%)]" />
+              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(249,115,22,0.18),transparent_55%),radial-gradient(circle_at_bottom,_rgba(234,88,12,0.18),transparent_55%)]" />
               <div className="relative space-y-4">
+                <div className="overflow-hidden rounded-2xl border border-slate-800/70">
+                  <Image
+                    src={heroImage.src}
+                    alt={heroImage.alt}
+                    width={900}
+                    height={520}
+                    className="h-56 w-full object-cover sm:h-64 md:h-72"
+                    priority
+                  />
+                </div>
                 <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-300">
                   Fabrication Capabilities
                 </h2>
